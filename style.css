@@ -1,0 +1,96 @@
+*{
+    background-color: rgb(128, 128, 128);
+}
+.mainbox{
+    height: 500px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    top: 50px;
+    left: 35%;
+}
+form,label,input,select,h1,sub,textarea,option,div{
+    background-color: white;
+}
+label{
+    margin-top: 15px;
+}
+input,select{
+    width: 240px;
+    height: 24px;
+    line-height: 15px;
+}
+sub{
+    position: relative;
+    bottom: 8px;
+    left: 6px;
+    font-size: 18px;
+    font-weight:bolder;
+}
+form{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+#box{
+    width: 245px;
+    height: 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#submit{
+    width: 80px;
+    height: 28px;
+    position:relative;
+    left: 420px;
+    top: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.error{
+    display: none;
+    width: 80%;
+    height: 15px;
+    font-size: 90%;
+    margin-top: 5px;
+    padding: 5px;
+    color: white ;
+    text-align: center;
+    background-color: #ef7979;
+    border-radius: 0 5px 5px 5px;
+    /* border:1px solid #f4e07a; */
+}
+p{
+    color: red;
+    width: auto;
+    margin:0;
+    padding: 0;
+    display: inline;
+    background-color: white;
+}
+.success{
+    display: none;
+    width: 80%;
+    height: 15px;
+    font-size: 100%;
+    margin-top: 5px;
+    color: rgb(18, 177, 18) ;
+    text-align: center;
+    position: relative;
+    right: 40px;
+    background-color: white;
+    /* border:1px solid #f4e07a; */
+}
+/* input:invalid {
+    border: 2px dashed red;
+  } */
