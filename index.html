@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>job application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <div class="mainbox">
+        <h1>Job Application<sub>(Web)</sub></h1>
+        <form>
+            <label >First Name<p>*</p><br>
+                <input type="text" id="first" placeholder="Enter First Name..." required>
+                <span class="error" id="firstn" aria-live="polite">
+                    Please enter a valid name! 
+                </span> 
+            </label>
+            <label >Last Name<p>*</p><br>
+                <input type="text" id="last" placeholder="Enter Last Name..." required>
+                <span class="error" id="lastn" aria-live="polite">
+                    Please enter a valid name! 
+                </span> 
+            </label>
+            <label >Email<p>*</p><br>
+                <input type="text" id="email" placeholder="Enter Email..." required>
+                <span class="error" id="mail" aria-live="polite">
+                    Please enter a valid email! 
+                </span> 
+            </label>
+            <label class="jobrolel">Job Role<p>*</p><br>
+                <select  id="job" name="Select job Role" style="height: 29px; width:246px" required>
+                    <option value="Select job Role">Select Job Role</option>
+                    <option value="Editor">Editor</option>
+                    <option value="Management">Management</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="back-end">Back-end</option>
+                </select>
+                <span class="error"  aria-live="polite">
+                    Select a role! 
+                </span> 
+            </label>
+            <label >Address<p>*</p><br>
+                <textarea name="message" id="address" style="width:490px; height: 50px;" required></textarea>
+                <span class="error" id="add" aria-live="polite">
+                    Address required! 
+                </span>
+            </label>
+            <label >City<p>*</p><br>
+                <input type="text"  id="city" placeholder="Enter City Name..." required>
+                <span class="error" id="city" aria-live="polite">
+                    Invalid!
+                </span> 
+            </label>
+            <label >Pincode<p>*</p><br>
+                <input type="text" id="pincode" placeholder="Enter Pincode Name..." required>
+                <span class="error" id="pin" aria-live="polite">
+                    Invalid pincode! 
+                </span> 
+            </label>
+            <label id="date">Date<p>*</p><br>
+                <input type="date" id="date"  required>
+            </label>
+            <label id="upload">Upload Your CV<p>*</p><br>
+                <div id="box" >
+                    <input type="file" id="fil" required>
+                    <span class="error" id="upload" aria-live="polite">
+                        Choose a file! 
+                    </span> </div></label>
+            <button id="submit">Apply Now</button>
+            <span class="success"  aria-live="polite">
+                Form Submitted!
+            </span> 
+        </form>
+        
+
+    </div>
+    <script src="check.js"></script>
+</body>
+</html>
